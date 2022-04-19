@@ -120,7 +120,7 @@ while 1:
         print('Strom L3: ' + str(StromL3))
         print('Leistungsfaktor: ' + str(Leistungsfaktor))
         print('Momentanleistung: ' + str(MomentanleistungP-MomentanleistungN))
-        print('Ende')
+        print('Ende2')
         print()
 
 
