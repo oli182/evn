@@ -128,10 +128,10 @@ while 1:
 #CSV Schreiben
 
 toWrite = [
-    ["WirkenergieP", "test", "15", "StromL2", "StromL3"]
+    ["01.01.2020", "10", "2"]
 ]
 
-file = open('LOG_Smartmeter.csv', 'a')
+file = open('test_csv.csv', 'a')
 
 with file:
     writer = csv.writer(file)
