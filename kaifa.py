@@ -134,7 +134,7 @@ while 1:
     if useCSV:
 
         toWrite = [
-            [WirkenergieP/1000, MomentanleistungP, StromL1, StromL2, StromL3]
+            [(WirkenergieP/1000), MomentanleistungP, StromL1, StromL2, StromL3]
         ]
 
         file = open('LOG_Smartmeter.csv', 'a')
