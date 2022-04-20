@@ -73,11 +73,11 @@ while 1:
     results_16 = soup.find_all('uint16')
 
     # current date and time
-    timestamp = 1545730073
-    dt_object = datetime.fromtimestamp(timestamp)
+    today = date.today()
+    # dd/mm/YY
+    d1 = today.strftime("%d/%m/%Y")
+    print("d1 =", d1)
 
-    print("dt_object =", dt_object)
-    print("type(dt_object) =", type(dt_object))
 
     #print(results_16)
     #print(results_32)
