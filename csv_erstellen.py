@@ -4,7 +4,7 @@ toWrite = [
     ["Wirkenergie+","Momentanleistung P+", "Strom L1", "Storm L2", "Strom L2"],
 ]
 
-file = open('LOG_Smartmeter', 'w')
+file = open('LOG_Smartmeter.csv', 'w')
 
 with file:
     writer = csv.writer(file)

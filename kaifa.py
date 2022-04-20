@@ -9,6 +9,7 @@ import paho.mqtt.client as mqtt
 from gurux_dlms.GXDLMSTranslator import GXDLMSTranslator
 from gurux_dlms.GXDLMSTranslatorMessage import GXDLMSTranslatorMessage
 from bs4 import BeautifulSoup
+import csv
 
 # EVN Schlüssel eingeben zB. "36C66639E48A8CA4D6BC8B282A793BBB"
 evn_schluessel = "8A21D6113502E2F68F49A2785DE49B6B"
@@ -122,6 +123,20 @@ while 1:
         print('Momentanleistung: ' + str(MomentanleistungP-MomentanleistungN))
         print('Ende2')
         print()
+
+
+#CSV Schreiben
+toWrite = [
+    [WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
+]
+
+file = open('LOG_Smartmeter.csv', 'a')
+
+with file:
+    writer = csv.writer(file)
+
+    for row in toWrite:
+        writer.writerow(row)
 
 
     #MQTT
