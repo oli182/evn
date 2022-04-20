@@ -127,7 +127,7 @@ while 1:
 
 #CSV Schreiben
 
-int (test = 15)
+int test = 15
 toWrite = [
     [str(WirkenergieP), test, StromL1, StromL2, StromL3]
 ]
