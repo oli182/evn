@@ -55,7 +55,7 @@ ser = serial.Serial( port=comport,
 
 while 1:
     daten = ser.read(size=282).hex()
-    print(daten)
+    #print(daten)
 
     msg = GXDLMSTranslatorMessage()
     msg.message = GXByteBuffer(daten)
