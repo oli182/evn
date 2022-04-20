@@ -114,7 +114,7 @@ while 1:
 
 
     if printValue:
-        print('Wirkenergie+: ' + str(WirkenergieP))
+        print('Wirkenergie+: ' + str(WirkenergieP/1000))
         print('Wirkenergie: ' + str(WirkenergieN))
         print('MomentanleistungP+: ' + str(MomentanleistungP))
         print('MomentanleistungP-: ' + str(MomentanleistungN))
