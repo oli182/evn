@@ -14,6 +14,9 @@ import csv
 # EVN Schlüssel eingeben zB. "36C66639E48A8CA4D6BC8B282A793BBB"
 evn_schluessel = "8A21D6113502E2F68F49A2785DE49B6B"
 
+#CSV Datei schreiben
+useCSV = True
+
 #MQTT Verwenden (True | False)
 useMQTT = False
 
@@ -125,19 +128,20 @@ while 1:
         print()
 
 
-#CSV Schreiben
+    #CSV Schreiben
+    if useCSV:
 
-toWrite = [
-    ["01.01.2020", "10", "2"]
-]
+        toWrite = [
+            ["01.01.2020", "10", "2"]
+        ]
 
-file = open('test_csv.csv', 'a')
+        file = open('test_csv.csv', 'a')
 
-with file:
-    writer = csv.writer(file)
+        with file:
+            writer = csv.writer(file)
 
-    for row in toWrite:
-        writer.writerow(row)
+            for row in toWrite:
+                writer.writerow(row)
 
 
     #MQTT
