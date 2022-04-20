@@ -13,4 +13,4 @@ with file:
     writer = csv.writer(file)
 
     for row in toWrite:
-        writer.writerrow(row)
+        writer.writerow(row)
