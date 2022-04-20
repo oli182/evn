@@ -10,7 +10,7 @@ toWrite = [
 file = open('test_csv.csv', 'w')
 
 with file:
-    writer ? csv.writer(file)
+    writer = csv.writer(file)
 
     for row in toWrite:
         writer.writerrow(row)
