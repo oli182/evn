@@ -26,7 +26,7 @@ mqttBroker = "192.168.1.10"
 mqttuser =""
 mqttpasswort = ""
 #Aktuelle Werte auf Console ausgeben (True | False)
-printValue = True
+printValue = False
 
 #Comport Config/Init
 comport = "/dev/ttyUSB0"
