@@ -1,3 +1,4 @@
+from xmlrpc.client import _DateTimeComparable, DateTime, _datetime_type
 from gurux_dlms.GXByteBuffer import GXByteBuffer
 import serial
 import time
@@ -70,6 +71,9 @@ while 1:
 
     results_32 = soup.find_all('uint32')
     results_16 = soup.find_all('uint16')
+    DateTime =soup.find_all('datetime')
+    print(dataTime)
+
     #print(results_16)
     #print(results_32)
     #print(soup)
