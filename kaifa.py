@@ -132,7 +132,6 @@ while 1:
     if useCSV:
 
         toWrite = [
-            ["Wirkenergie+","Momentanleistung P+", "Strom L1", "Storm L2", "Strom L2"],
             [WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
         ]
 
