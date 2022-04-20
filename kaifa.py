@@ -137,7 +137,7 @@ while 1:
             [WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
         ]
 
-        file = open('LOG_Smartmeter', 'a')
+        file = open('LOG_Smartmeter.csv', 'a')
 
         with file:
             writer = csv.writer(file)
