@@ -13,7 +13,7 @@ case "$1" in
     start)
         echo "Kaifa wird gestartet"
         # Starte Programm
-        /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
         ;;
     stop)
         echo "Kaifa wird beendet"
