@@ -10,7 +10,7 @@ from gurux_dlms.GXDLMSTranslator import GXDLMSTranslator
 from gurux_dlms.GXDLMSTranslatorMessage import GXDLMSTranslatorMessage
 from bs4 import BeautifulSoup
 import csv
-from datetime import date
+from datetime import datetime
 
 # EVN Schlüssel eingeben zB. "36C66639E48A8CA4D6BC8B282A793BBB"
 evn_schluessel = "8A21D6113502E2F68F49A2785DE49B6B"
@@ -72,11 +72,13 @@ while 1:
     results_32 = soup.find_all('uint32')
     results_16 = soup.find_all('uint16')
 
-    # current date and time
-    today = date.today()
-    # dd/mm/YY
-    d1 = today.strftime("%d/%m/%Y")
-    print("d1 =", d1)
+    # datetime object containing current date and time
+    now = datetime.now()
+    
+    print("now =", now)
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    print("date and time =", dt_string))
 
 
     #print(results_16)
