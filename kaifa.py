@@ -11,8 +11,7 @@ from gurux_dlms.GXDLMSTranslator import GXDLMSTranslator
 from gurux_dlms.GXDLMSTranslatorMessage import GXDLMSTranslatorMessage
 from bs4 import BeautifulSoup
 import csv
-from datetime
-import datetime
+
 
 # EVN Schlüssel eingeben zB. "36C66639E48A8CA4D6BC8B282A793BBB"
 evn_schluessel = "8A21D6113502E2F68F49A2785DE49B6B"
@@ -73,8 +72,6 @@ while 1:
 
     results_32 = soup.find_all('uint32')
     results_16 = soup.find_all('uint16')
-    DateTime =soup.find_all('datetime')
-    print(dataTime)
 
     #print(results_16)
     #print(results_32)
@@ -117,9 +114,7 @@ while 1:
     #Leistungsfaktor
     Leistungsfaktor = int(str(results_16)[208:212],16)/1000
 
-    now =datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-    print("Current Time =", current_time)
+    
 
 
 
