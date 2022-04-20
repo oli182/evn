@@ -14,6 +14,9 @@ case "$1" in
         echo "Kaifa wird gestartet"
         # Starte Programm
         python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
         ;;
     stop)
         echo "Kaifa wird beendet"
