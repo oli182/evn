@@ -72,10 +72,11 @@ while 1:
     results_32 = soup.find_all('uint32')
     results_16 = soup.find_all('uint16')
 
+    # current date and time
     now = datetime.now()
 
-    current_time = now.strftime("%H:%M:%S")
-    print("Current Time =", current_time)
+    timestamp = datetime.timestamp(now)
+    print("timestamp =", timestamp)
 
     #print(results_16)
     #print(results_32)
