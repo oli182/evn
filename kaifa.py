@@ -129,7 +129,7 @@ while 1:
 
 test = 15
 toWrite = [
-    [str(WirkenergieP), test, StromL1, StromL2, StromL3]
+    [str(WirkenergieP), test, "15", StromL2, StromL3]
 ]
 
 file = open('LOG_Smartmeter.csv', 'a')
