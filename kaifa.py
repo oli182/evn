@@ -114,7 +114,7 @@ while 1:
 
 
     if printValue:
-        print('Wirkenergie+: ' + str(WirkenergieP/1000))
+        print('Wirkenergie+: ' + str(WirkenergieP))
         print('Wirkenergie: ' + str(WirkenergieN))
         print('MomentanleistungP+: ' + str(MomentanleistungP))
         print('MomentanleistungP-: ' + str(MomentanleistungN))
@@ -134,7 +134,7 @@ while 1:
     if useCSV:
 
         toWrite = [
-            [WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
+            [WirkenergieP/1000, MomentanleistungP, StromL1, StromL2, StromL3]
         ]
 
         file = open('LOG_Smartmeter.csv', 'a')
