@@ -78,6 +78,7 @@ while 1:
     print("now =", now)
     # dd/mm/YY H:M:S
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    
     print("date and time =", dt_string)
 
 
@@ -147,7 +148,7 @@ while 1:
     if useCSV:
 
         toWrite = [
-            [WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
+            [dt_string, WirkenergieP, MomentanleistungP, StromL1, StromL2, StromL3]
         ]
 
         file = open('LOG_Smartmeter.csv', 'a')

@@ -1,7 +1,7 @@
 import csv
 
 toWrite = [
-    ["Wirkenergie+","Momentanleistung P+", "Strom L1", "Storm L2", "Strom L2"],
+    ["Datum & Zeit", "Wirkenergie+","Momentanleistung P+", "Strom L1", "Storm L2", "Strom L2"],
 ]
 
 file = open('LOG_Smartmeter.csv', 'w')
