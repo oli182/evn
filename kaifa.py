@@ -22,7 +22,7 @@ useCSV = True
 useMQTT = False
 
 #MQTT Broker IP adresse Eingeben ohne Port!
-mqttBroker = "192.168.1.10"
+mqttBroker = "192.168.1.34"
 mqttuser =""
 mqttpasswort = ""
 #Aktuelle Werte auf Console ausgeben (True | False)
