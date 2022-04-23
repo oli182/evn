@@ -19,7 +19,7 @@ evn_schluessel = "8A21D6113502E2F68F49A2785DE49B6B"
 useCSV = True
 
 #MQTT Verwenden (True | False)
-useMQTT = False
+useMQTT = True
 
 #MQTT Broker IP adresse Eingeben ohne Port!
 mqttBroker = "192.168.1.34"
