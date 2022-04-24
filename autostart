@@ -16,6 +16,12 @@ case "$1" in
         python3 /home/pi/evn/kaifa.py
         python3 /home/pi/evn/kaifa.py
         python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
+        python3 /home/pi/evn/kaifa.py
         ;;
     stop)
         echo "Kaifa wird beendet"
